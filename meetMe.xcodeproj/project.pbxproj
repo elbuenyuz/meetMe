@@ -15,6 +15,7 @@
 		8EABD2991DB15161003CFF8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EABD2971DB15161003CFF8A /* LaunchScreen.storyboard */; };
 		8EABD2A41DB15162003CFF8A /* meetMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABD2A31DB15162003CFF8A /* meetMeTests.swift */; };
 		8EABD2AF1DB15162003CFF8A /* meetMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABD2AE1DB15162003CFF8A /* meetMeUITests.swift */; };
+		D59CA4AD93D87FCDFB37ABF8 /* Pods_meetMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE63FD61308268BAC2F59AD /* Pods_meetMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A211F1B156CDA5E11C055A5 /* Pods-meetMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meetMe/Pods-meetMe.debug.xcconfig"; sourceTree = "<group>"; };
+		4CE63FD61308268BAC2F59AD /* Pods_meetMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meetMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EABD2881DB15161003CFF8A /* meetMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meetMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EABD28B1DB15161003CFF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EABD28D1DB15161003CFF8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		8EABD2AA1DB15162003CFF8A /* meetMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meetMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EABD2AE1DB15162003CFF8A /* meetMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetMeUITests.swift; sourceTree = "<group>"; };
 		8EABD2B01DB15162003CFF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91C1ABAC19C4499529FD768 /* Pods-meetMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-meetMe/Pods-meetMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59CA4AD93D87FCDFB37ABF8 /* Pods_meetMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4579AE46B0D0D014EAABC09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE63FD61308268BAC2F59AD /* Pods_meetMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EABD27F1DB15161003CFF8A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				8EABD2A21DB15162003CFF8A /* meetMeTests */,
 				8EABD2AD1DB15162003CFF8A /* meetMeUITests */,
 				8EABD2891DB15161003CFF8A /* Products */,
+				FAACEA9B947EED5159977133 /* Pods */,
+				4579AE46B0D0D014EAABC09C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,15 @@
 			path = meetMeUITests;
 			sourceTree = "<group>";
 		};
+		FAACEA9B947EED5159977133 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A211F1B156CDA5E11C055A5 /* Pods-meetMe.debug.xcconfig */,
+				B91C1ABAC19C4499529FD768 /* Pods-meetMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EABD2B31DB15162003CFF8A /* Build configuration list for PBXNativeTarget "meetMe" */;
 			buildPhases = (
+				AD548766FCF3AF9D273AA1F9 /* [CP] Check Pods Manifest.lock */,
 				8EABD2841DB15161003CFF8A /* Sources */,
 				8EABD2851DB15161003CFF8A /* Frameworks */,
 				8EABD2861DB15161003CFF8A /* Resources */,
+				B7FF44E125C4C395F7080521 /* [CP] Embed Pods Frameworks */,
+				453A20A9FDE01A2743352088 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		453A20A9FDE01A2743352088 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meetMe/Pods-meetMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD548766FCF3AF9D273AA1F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FF44E125C4C395F7080521 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meetMe/Pods-meetMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EABD2841DB15161003CFF8A /* Sources */ = {
@@ -417,6 +492,7 @@
 		};
 		8EABD2B41DB15162003CFF8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A211F1B156CDA5E11C055A5 /* Pods-meetMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83M9X3N895;
@@ -430,6 +506,7 @@
 		};
 		8EABD2B51DB15162003CFF8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91C1ABAC19C4499529FD768 /* Pods-meetMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83M9X3N895;
@@ -518,6 +595,7 @@
 				8EABD2B51DB15162003CFF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EABD2B61DB15162003CFF8A /* Build configuration list for PBXNativeTarget "meetMeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +604,7 @@
 				8EABD2B81DB15162003CFF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EABD2B91DB15162003CFF8A /* Build configuration list for PBXNativeTarget "meetMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +613,7 @@
 				8EABD2BB1DB15162003CFF8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
